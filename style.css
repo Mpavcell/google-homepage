@@ -8,11 +8,13 @@ html {
     box-sizing: border-box;
 }
 
-.wrapper {
-    padding: 20px;
-}
 
 /* Navigation Top */
+
+
+.top-nav {
+    padding: 20px;
+}
 
 .top-left {
     float: left;
@@ -30,6 +32,10 @@ html {
     margin: 10px;
 }
 
+.nav-link-standard:hover {
+    text-decoration: underline;
+}
+
 #nav-link-blue {
     font-weight: bold;
     color: #FFF;
@@ -37,7 +43,9 @@ html {
     padding: 0.4rem 0.8rem;
 }
 
+
 /* Main Content */
+
 
 .main-content {
     margin-top: 200px;
@@ -51,13 +59,17 @@ html {
     '. c .' ;
 }
 
-    /* Main - Logo */
+
+        /* Main - Logo */
+
 
 .logo {
     grid-area: a
 }
 
-    /* Main - Searchbar */
+
+        /* Main - Searchbar */
+
 
 .searchbar {
     grid-area: b;
@@ -81,17 +93,9 @@ html {
     box-shadow: 0px 0px 4px  rgb(218, 218, 218);
 }
 
-    /* Main - Buttons */
 
-.buttons input {
-    font-family:Lucida Grande, Helvetica, Arial, sans-serif;
-    font-size: 0.89rem;
-    padding: 0.6rem 1.30rem;
-    border: none;
-    border-radius: 5px;
-    background-color:  rgb(241, 241, 241);
-    color: rgb(105, 104, 104);
-}
+        /* Main - Buttons */
+
 
 .buttons {
     grid-area: c;
@@ -103,9 +107,20 @@ html {
 .search {
     grid-area: button1;
 }
+
 .lucky {
     grid-area: button2;
     margin-left: 0.4rem;
+}
+
+.buttons input {
+    font-family: Lucida Grande, Helvetica, Arial, sans-serif;
+    font-size: 0.89rem;
+    padding: 0.6rem 1.30rem;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgb(241, 241, 241);
+    color: rgb(105, 104, 104);
 }
 
 .buttons input:hover {
@@ -113,7 +128,50 @@ html {
     cursor: pointer;
 }
 
+
 /* Footer */
 
+
+.bottom-nav {
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(221, 221, 221);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.bottom-left {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.bottom-right {
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.bottom-nav a {
+    color: rgb(0, 0, 0);
+    opacity: 0.65;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-link-bottomleft {
+    margin-right: 25px;
+}
+
+.nav-link-bottomright {
+    margin-left: 25px;
+}
 
 
